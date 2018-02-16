@@ -22,9 +22,3 @@ end
 def select_character_names_and_number_of_books_they_are_in
   "Write your SQL query here"
 end
-SELECT SUM(cats.net_worth)
-FROM owners
-INNER JOIN cats_owners
-ON owners.id = cats_owners.owner_id
-JOIN cats ON cats_owners.cat_id = cats.id
-WHERE cats_owners.owner_id = 2;
